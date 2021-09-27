@@ -80,6 +80,7 @@ void Pelicula::setTitulo(const string &value)
 
 Pelicula::Pelicula()
 {
+    this->comprado = false;
     this->id = totalPeliculas;
     this->titulo = "\0";
     this->duracion = 0;
@@ -90,6 +91,7 @@ Pelicula::Pelicula()
 
 Pelicula::Pelicula(string titulo, float duracion, bool estreno, string hora)
 {
+    this->comprado = false;
     this->id = totalPeliculas;
     this->titulo = titulo;
     this->duracion = duracion;
